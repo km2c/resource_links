@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Resource Links",
+  "description": "This app is a collection of commonly used links at resource",
+  "version": "0.1.2",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["popup.js", "jquery.js"]
+    }
+  ],
+  "icons" : {
+    "48": "a_48.png",
+    "128": "a_128.png"
+  }
+}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width: 250px;
+        overflow-x: hidden;
+        background: #000 url(bg.png);
+      }
+      ul {
+      	padding-left:0;
+      	margin:0;
+      }
+      li {
+      	list-style: none;
+      	margin-bottom:5px;
+      	background: #fff;
+      	border: 1px solid #eee;
+      	box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+      	border-radius: 3px;
+      }
+
+      li:hover {
+      	background: #efefef;
+      }
+
+	.link {
+		background: url(sprite.png) no-repeat;
+		text-decoration: none;
+		font-family: sans-serif;
+		color:#636466;
+		display: block;
+		padding-left:40px;
+		line-height: 32px;
+		height:31px;
+		outline: none;
+		border-radius: 3px;
+
+	}
+	#insider {
+		background-position: 0 0;
+	}
+	#openair {
+		background-position: 0 -45px;
+	}
+	#mail {
+		background-position: 0 -85px;
+	}
+	#spam {
+		background-position: 0 -130px;
+	}
+	#centralDesktop {
+		background-position: 0 -170px;
+	}
+	#crucible {
+		background-position: 0 -215px;
+	}
+	#wiki {
+		background-position: 0 -255px;
+	}
+	#driveConverter {
+		background-position: 0 -300px;
+	}
+	#svn {
+		background-position: 0 -340px;
+	}
+	#jira {
+		background-position: 0 -385px;
+	}
+	#estimates {
+		background-position: 0 -424px;
+	}
+	#newEstimates {
+		background-position: 0 -468px;
+	}
+	#adp {
+		background-position: 0 -511px;
+	}
+	#webx {
+		background-position: 0 -555px;
+	}
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+     <script src="jquery.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+  	<ul>
+  		<li><a href="http://insider.resource.com" class="link" id="insider">Insider</a></li>
+  		<li><a href="https://www.openair.com/index.pl" class="link" id="openair">OpenAir</a></li>
+  		<li><a href="https://mail.resource.com" class="link" id="mail">Web Mail</a></li>
+  		<li><a href="https://login.postini.com/exec/login" class="link" id="spam">Spam</a></li>
+  		<li><a href="https://resource.centraldesktop.com/home/?la" class="link" id="centralDesktop">Central Desktop</a></li>
+  		<li><a href="http://crucible.resource.com/" class="link" id="crucible">Crucible</a></li>
+  		<li><a href="http://demo.resource.com/" class="link" id="wiki">Demo Wiki</a></li>
+  		<li><a href="http://lukeaskew.com/projects/resource-drive-converter/" class="link" id="driveConverter">Drive Converter</a></li>
+  		<li><a href="https://subversion.resource.com/repos/ResourceInteractive/" class="link" id="svn">SVN</a></li>
+  		<li><a href="http://jira.resource.com" class="link" id="jira">Jira</a></li>
+  		<li><a href="http://jira/jira/browse/ESTIMATE" class="link" id="estimates">Estimates</a></li>
+  		<li><a href="http://jira/jira/secure/CreateIssue.jspa?pid=13843&issuetype=37" class="link" id="newEstimates">New Estimate</a></li>
+  		<li><a href="https://portal.adp.com/public/index.htm" class="link" id="adp">ADP Portal</a></li>
+  		<li><a href="https://resource.webex.com/" class="link" id="webx">Webex</a></li>
+  	</ul>
+  </body>
+</html>
+
